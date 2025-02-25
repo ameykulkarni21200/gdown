@@ -9,20 +9,18 @@ import pickle
 # Function to download and display file
 def download_and_display_file(file_url):
     # Download the file using gdown
-    output = 'PF Form11 - New Format.docx'  # Change the file name and extension as needed
+    output = 'fantasy_score_model.pkl'  # Change the file name and extension as needed
     gdown.download(file_url, output, quiet=False)
 
-    doc = Document(output)
-    content = []
-    for para in doc.paragraphs:
-          content.append(para.text)
-    st.write("\n".join(content))
+    with open(output, 'rb') as file:
+            data = pickle.load(file)
+    st.write(data)
 
 # Streamlit UI
 st.title("Google Drive File Access with gdown")
 
 # Input for Google Drive file URL
-file_url = 'https://docs.google.com/document/d/1BesDWSNjNHeF9pjYGgki92cFDyvoR3Bl/edit?usp=drive_link&ouid=114939215147549650885&rtpof=true&sd=true'
+file_url = 'https://drive.google.com/file/d/1D1kPHNLC1MpVirOp-jhU3ViXkDJVUS_N/view?usp=sharing'
 
 if st.button("Download and Display"):
     if file_url:
