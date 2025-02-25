@@ -1,3 +1,7 @@
 streamlit
 gdown
 pandas
+
+
+pillow
+python-docx
