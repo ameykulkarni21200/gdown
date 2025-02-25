@@ -10,11 +10,11 @@ def download_and_display_file(file_url):
     output = 'PF Form11 - New Format.docx'  # Change the file name and extension as needed
     gdown.download(file_url, output, quiet=False)
 
-   doc = Document(output)
-   content = []
-   for para in doc.paragraphs:
+    doc = Document(output)
+    content = []
+    for para in doc.paragraphs:
           content.append(para.text)
-   st.write("\n".join(content))
+    st.write("\n".join(content))
 
 # Streamlit UI
 st.title("Google Drive File Access with gdown")
