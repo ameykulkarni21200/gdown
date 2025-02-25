@@ -20,7 +20,7 @@ def download_and_display_file(file_url):
 st.title("Google Drive File Access with gdown")
 
 # Input for Google Drive file URL
-file_url = https://docs.google.com/document/d/1BesDWSNjNHeF9pjYGgki92cFDyvoR3Bl/edit?usp=drive_link&ouid=114939215147549650885&rtpof=true&sd=true
+file_url = 'https://docs.google.com/document/d/1BesDWSNjNHeF9pjYGgki92cFDyvoR3Bl/edit?usp=drive_link&ouid=114939215147549650885&rtpof=true&sd=true'
 
 if st.button("Download and Display"):
     if file_url:
