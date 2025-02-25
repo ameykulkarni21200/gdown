@@ -6,4 +6,4 @@ pandas
 pillow
 python-docx
 
-sklearn
+scikit-learn
