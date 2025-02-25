@@ -20,10 +20,23 @@ def download_and_display_file(file_url):
 st.title("Google Drive File Access with gdown")
 
 # Input for Google Drive file URL
-file_url = 'https://drive.google.com/file/d/1D1kPHNLC1MpVirOp-jhU3ViXkDJVUS_N/view?usp=drive_link'
+file_url = 'https://drive.google.com/uc?id=1D1kPHNLC1MpVirOp-jhU3ViXkDJVUS_N'
 
 if st.button("Download and Display"):
     if file_url:
         download_and_display_file(file_url)
     else:
         st.error("Please enter a valid Google Drive file URL.")
+
+
+
+
+
+
+
+
+
+
+
+
+#https://drive.google.com/file/d/1D1kPHNLC1MpVirOp-jhU3ViXkDJVUS_N/view?usp=drive_link
