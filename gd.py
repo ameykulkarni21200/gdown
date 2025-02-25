@@ -2,7 +2,9 @@ import streamlit as st
 import gdown
 import pandas as pd
 from docx import Document
-#import pickle
+import pickle
+
+
 
 # Function to download and display file
 def download_and_display_file(file_url):
